@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Dater",
+  "version": "1.0",
+  "description": "Adds date.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.monday.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
